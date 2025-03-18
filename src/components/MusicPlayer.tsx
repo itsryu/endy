@@ -9,7 +9,9 @@ const MusicPlayer: React.FC = () => {
         { title: "You Are The Right One - Sports", src: "/sounds/you_are_the_right_one.m4a" },
         { title: "Farewell, Neverland - TXT", src: "/sounds/farewell_neverland.m4a" },
         { title: "Knee Socks - Arctic Monkeys", src: "/sounds/knee_socks.m4a" },
-        { title: "Follow You - BMTH", src: "/sounds/follow_you.m4a" }
+        { title: "Follow You - BMTH", src: "/sounds/follow_you.m4a" },
+        { title: "R U Mine? - Arctic Monkeys", src: "/sounds/r_u_mine.m4a" },
+        { title: "Seu Astral - Jorge & Mateus", src: "/sounds/seu_astral.m4a" },
     ]);
 
     const [currentTrack, setCurrentTrack] = useState(playlist[0]);
@@ -18,7 +20,6 @@ const MusicPlayer: React.FC = () => {
     const [progress, setProgress] = useState(0);
     const [volume, setVolume] = useState(0.8);
     const [duration, setDuration] = useState(0);
-
     const audioRef = useRef<HTMLAudioElement | null>(null);
     const modalRef = useRef<HTMLDivElement | null>(null);
     const { scrollY } = useScroll();
@@ -26,7 +27,11 @@ const MusicPlayer: React.FC = () => {
 
     useEffect(() => {
         if (audioRef.current) {
-            isPlaying ? audioRef.current.play() : audioRef.current.pause();
+            if (isPlaying) {
+                audioRef.current.play();
+            } else {
+                audioRef.current.pause();
+            }
         }
     }, [currentTrack, isPlaying]);
 
