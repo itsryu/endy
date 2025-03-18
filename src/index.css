@@ -43,6 +43,25 @@
     color: hsl(var(--primary-50));
   }
 
+  /* Estilização minimalista da scrollbar: uma linha branca */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  ::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 1px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
   .selector {
     -webkit-user-drag: none;
     user-select: none;
