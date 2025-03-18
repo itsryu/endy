@@ -65,7 +65,7 @@ const CarouselComponent = () => {
 								) : (
 									<img
 										src={item.img}
-										alt={`Foto ${item.id}`}
+										alt={`Item ${item.id}`}
 										className="w-full h-full object-cover rounded-md"
 										loading="lazy"
 									/>
