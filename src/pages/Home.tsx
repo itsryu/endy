@@ -45,7 +45,7 @@ export const Home = () => {
 					<BoxReveal duration={1}>
 						<div className="flex justify-center">
 							<img
-								src="https://media.discordapp.net/attachments/1150221977164988508/1306794155254612018/IMG_20241114_221032_772.webp"
+								src="https://media.discordapp.net/attachments/1150221977164988508/1298476350373367880/1729651223408.jpg?ex=67dad796&is=67d98616&hm=ba58a808c281b17c361c6db50b91ce2141bc150cd7dff4b091a98db2669efc77&=&format=webp&width=635&height=856"
 								alt="Lembrança nossa"
 								className="rounded-lg w-64 h-64 object-cover shadow-lg"
 								loading="lazy"

@@ -22,7 +22,7 @@ const MusicPopup = () => {
         >
             <Music className="text-primary w-6 h-6" />
             <p className="text-popover-foreground text-sm font-medium">
-                Escolha uma música para tornar o momento ainda mais especial! 🎶
+                Escolha uma música!
             </p>
             <button
                 onClick={() => setIsVisible(false)}
