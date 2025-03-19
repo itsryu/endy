@@ -8,7 +8,7 @@ interface Star {
     opacity: number;
 }
 
-const generateStars = (count: number) =>
+const generateStars = (count: number): Star[] =>
     Array.from({ length: count }).map(() => ({
         x: Math.random() * 100,
         y: Math.random() * 100,
