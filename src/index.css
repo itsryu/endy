@@ -85,7 +85,6 @@
       'sans-serif';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
     background-color: hsl(var(--primary-900));
     color: hsl(var(--primary-50));
   }
@@ -132,16 +131,8 @@
   }
 
   .animate-fall {
+    will-change: transform, opacity;
     animation: fall 5s linear infinite;
-  }
-
-  .petal {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(255, 192, 203, 1) 100%);
-    border-radius: 50%;
-    opacity: 0.75;
   }
 
   :root {
@@ -275,6 +266,13 @@
     .container {
       padding: 1rem;
     }
+
+    /* Desativa filtros pesados para melhorar a performance */
+    .blur-1px,
+    .blur-2px,
+    .blur-3px {
+      filter: none;
+    }
   }
 
   @media (min-width: 769px) {
@@ -284,6 +282,22 @@
 
     .container {
       padding: 2rem;
+    }
+  }
+
+  /* Reduz animações para usuários que preferem movimento reduzido */
+  @media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+
+    .animate-fall {
+      animation: none !important;
     }
   }
 

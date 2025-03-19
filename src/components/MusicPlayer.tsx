@@ -112,7 +112,7 @@ const MusicPlayer: React.FC = () => {
                         </button>
 
                         <div className="text-center">
-                            <h2 className="text-lg font-semibold">Tocando agora</h2>
+                            <h2 className="text-lg font-semibold">Nossa Playlist</h2>
                             <p className="text-xl mt-1">{currentTrack.title}</p>
                         </div>
 

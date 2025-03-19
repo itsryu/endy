@@ -7,12 +7,11 @@ import CarouselComponent from "@/components/Carosel";
 import Timer from "@/components/TimerDate";
 import { SparklesText } from "@/components/animated/SparklesText";
 import MusicPopup from "@/components/MusicPopup";
-import { ParallaxStars } from "@/components/ParallaxStars";
+import img_001 from "@/assets/photos/001.png";
 
 export const Home = () => {
 	return (
 		<motion.div className="relative flex flex-col justify-center gap-6 mt-10">
-			<ParallaxStars />
 			<MusicPopup />
 
 			<ContainerBox>
@@ -29,11 +28,12 @@ export const Home = () => {
 					<BoxReveal duration={0.7}>
 						<p className="text-muted-foreground leading-relaxed">
 							Eu pensei muito antes de fazer isso, e talvez você nem quisesse
-							ver, mas eu precisava me expressar de alguma forma. <br /> Eu não
-							quero incomodar, muito menos esperar algo de você. Só quero que,
+							ver, mas eu precisava me expressar de alguma forma. Gostaria de ter feito muito mais coisas, 
+							porém meu tempo tava bem limitado, então fiz o que pude (apesar de ter sofrido nesse front-end). <br />
+							Eu não quero incomodar, muito menos esperar algo de você. Só quero que,
 							por um momento, você veja isso como uma lembrança... e um pedido
-							de desculpas sincero. <br /> Sei que palavras não apagam o
-							passado, mas queria ao menos deixar claro que nunca foi minha
+							de desculpas sincero. <br /> 
+							Sei que palavras não apagam o passado, mas queria ao menos deixar claro que nunca foi minha
 							intenção te magoar.
 						</p>
 					</BoxReveal>
@@ -41,7 +41,7 @@ export const Home = () => {
 					<BoxReveal duration={1}>
 						<div className="flex justify-center items-center w-full">
 							<img
-								src="https://cdn.discordapp.com/attachments/1351781812862717962/1351781831690813460/IMG_20241114_221011_797.png?ex=67dba06f&is=67da4eef&hm=eeb78cb1fa27aef6f0cbd41193e175bae81693c3289cf3a91520565b2d710adf&"
+								src={img_001}
 								alt="Lembrança nossa"
 								className="rounded-lg w-64 h-64 object-cover shadow-lg"
 								loading="lazy"
@@ -67,7 +67,20 @@ export const Home = () => {
 				<motion.p className="text-2xl font-semibold capitalize">
 					Memórias que guardo
 				</motion.p>
+				
 				<CarouselComponent />
+
+				<BoxReveal duration={0.7}>
+						<p className="text-muted-foreground leading-relaxed">
+							Esses acontecimentos nunca irão se apagar da minha memória,
+							este é um pequeno pedaço de tudo que vivemos juntos. <br /><br />
+							"Que não seja imortal, posto que é chama, mas que seja infinito
+							enquanto dure." 
+							<p className="text-muted-foreground text-sm">
+								- Vinícius de Moraes
+							</p>	
+						</p>
+					</BoxReveal>
 			</motion.div>
 
 			<div className="flex flex-col items-center justify-center mx-1.5">
