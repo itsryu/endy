@@ -12,13 +12,9 @@ import { ParallaxStars } from "@/components/ParallaxStars";
 export const Home = () => {
 	return (
 		<motion.div className="relative flex flex-col justify-center gap-6 mt-10">
-			{/* Fundo Parallax */}
 			<ParallaxStars />
-
-			{/* Popup de Música */}
 			<MusicPopup />
 
-			{/* Seção de Abertura */}
 			<ContainerBox>
 				<div className="flex flex-col gap-6 h-auto p-6 w-full">
 					<BoxReveal duration={0.8}>
@@ -43,9 +39,9 @@ export const Home = () => {
 					</BoxReveal>
 
 					<BoxReveal duration={1}>
-						<div className="flex justify-center">
+						<div className="flex justify-center items-center w-full">
 							<img
-								src="https://media.discordapp.net/attachments/1150221977164988508/1298476350373367880/1729651223408.jpg?ex=67dad796&is=67d98616&hm=ba58a808c281b17c361c6db50b91ce2141bc150cd7dff4b091a98db2669efc77&=&format=webp&width=635&height=856"
+								src="https://cdn.discordapp.com/attachments/1351781812862717962/1351781831690813460/IMG_20241114_221011_797.png?ex=67dba06f&is=67da4eef&hm=eeb78cb1fa27aef6f0cbd41193e175bae81693c3289cf3a91520565b2d710adf&"
 								alt="Lembrança nossa"
 								className="rounded-lg w-64 h-64 object-cover shadow-lg"
 								loading="lazy"
@@ -55,59 +51,13 @@ export const Home = () => {
 				</div>
 			</ContainerBox>
 
-			{/* Seção de Recordação */}
-			<ContainerBox>
-				<motion.div className="flex flex-col gap-6">
-					<motion.h2
-						className="text-2xl font-semibold capitalize"
-						initial={{ opacity: 0, x: 100 }}
-						whileInView={{ opacity: 1, x: 0 }}
-						viewport={{ once: true, amount: 0.5 }}
-						transition={{ duration: 0.5 }}
-					>
-						Nosso primeiro encontro
-					</motion.h2>
-
-					<motion.p
-						className="text-muted-foreground leading-relaxed"
-						initial={{ opacity: 0, x: -100 }}
-						whileInView={{ opacity: 1, x: 0 }}
-						viewport={{ once: true, amount: 0.5 }}
-						transition={{ duration: 0.5 }}
-					>
-						Jamais imaginei que um evento de anime (que eu nem queria ir) faria
-						meu caminho cruzar com o seu. Eu lembro da ansiedade antes de te
-						ver e de como tudo pareceu tão natural depois. <br />
-						Independentemente do que aconteceu depois, essa lembrança ainda é
-						algo especial para mim.
-					</motion.p>
-
-					<motion.div
-						initial={{ opacity: 0, y: 100 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true, amount: 0.5 }}
-						transition={{ duration: 0.4 }}
-						className="flex justify-center"
-					>
-						<img
-							src="https://source.unsplash.com/random/300x300?love"
-							alt="Memória do primeiro encontro"
-							className="rounded-lg w-64 h-64 object-cover shadow-lg"
-							loading="lazy"
-						/>
-					</motion.div>
-				</motion.div>
-			</ContainerBox>
-
-			{/* Seção Marquee 3D */}
 			<div className="w-full flex flex-col items-center justify-center py-6">
 				<TextAnimate className="text-xl font-semibold capitalize mb-5">
-					Coisas que me fizeram te amar
+					Coisas que amo em você
 				</TextAnimate>
 				<Marquee3D />
 			</div>
 
-			{/* Seção de Fotos */}
 			<motion.div
 				initial={{ opacity: 0, x: -100 }}
 				whileInView={{ opacity: 1, x: 0 }}
@@ -115,17 +65,15 @@ export const Home = () => {
 				className="w-full flex flex-col items-center justify-center my-8"
 			>
 				<motion.p className="text-2xl font-semibold capitalize">
-					Memórias que guardo com carinho
+					Memórias que guardo
 				</motion.p>
 				<CarouselComponent />
 			</motion.div>
 
-			{/* Timer de Contagem */}
 			<div className="flex flex-col items-center justify-center mx-1.5">
 				<Timer />
 			</div>
 
-			{/* Mensagem Final */}
 			<div className="text-center my-8">
 				<SparklesText text="Me desculpa" />
 				<p className="text-lg pb-3 text-muted-foreground mt-4">
