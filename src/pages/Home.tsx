@@ -30,6 +30,9 @@ export const Home = () => {
 							Eu pensei muito antes de fazer isso, e talvez você nem quisesse
 							ver, mas eu precisava me expressar de alguma forma. Gostaria de ter feito muito mais coisas, 
 							porém meu tempo tava bem limitado, então fiz o que pude (apesar de ter sofrido nesse front-end). <br />
+							No cartãozinho que te entreguei, na parte de trás tem um enigma pra você resolver, você é uma garota inteligente,
+							e sei que ama enigmas então achei que seria uma boa ideia. <br />
+							Espero que goste, e que consiga resolver. <br />
 							Eu não quero incomodar, muito menos esperar algo de você. Só quero que,
 							por um momento, você veja isso como uma lembrança... e um pedido
 							de desculpas sincero. <br /> 
